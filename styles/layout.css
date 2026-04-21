@@ -1,0 +1,16 @@
+header {
+    background: var(--color-bg-header);
+    padding-block: var(--space-header);
+}
+
+section,
+.section {
+  width: 100%;
+}
+
+/* Container purpose is to avoid full width*/
+.container {
+  /* width: min(var(--width-container), calc(100% - var(--space-container))); */
+  max-width: var(--width-container);
+  margin-inline: auto;
+}
