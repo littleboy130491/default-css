@@ -1,0 +1,144 @@
+:root {
+    /*h1*/
+    --font-h1: var(--font-display);
+    --weight-h1: var(--weight-bold);
+    --text-h1: var(--text-3xl);
+    --leading-h1: var(--leading-tight);
+    --tracking-h1: var(--tracking-tight);
+    --transform-h1: none;
+    --color-h1: var(--color-text);
+    --measure-h1: none;
+
+    /*h2*/
+    --font-h2: var(--font-display);
+    --weight-h2: var(--weight-semibold);
+    --text-h2: var(--text-2xl);
+    --leading-h2: var(--leading-tight);
+    --tracking-h2: var(--tracking-tight);
+    --transform-h2: none;
+    --color-h2: var(--color-text);
+    --measure-h2: none;
+
+    /*h3*/
+    --font-h3: var(--font-display);
+    --weight-h3: var(--weight-semibold);
+    --text-h3: var(--text-xl);
+    --leading-h3: var(--leading-snug);
+    --tracking-h3: var(--tracking-normal);
+    --transform-h3: none;
+    --color-h3: var(--color-text);
+    --measure-h3: none;
+
+    /*h4*/
+    --font-h4: var(--font-body);
+    --weight-h4: var(--weight-semibold);
+    --text-h4: var(--text-lg);
+    --leading-h4: var(--leading-snug);
+    --tracking-h4: var(--tracking-normal);
+    --transform-h4: none;
+    --color-h4: var(--color-text);
+    --measure-h4: none;
+
+    /*h5*/
+    --font-h5: var(--font-body);
+    --weight-h5: var(--weight-medium);
+    --text-h5: var(--text-md);
+    --leading-h5: var(--leading-normal);
+    --tracking-h5: var(--tracking-normal);
+    --transform-h5: none;
+    --color-h5: var(--color-text);
+    --measure-h5: none;
+
+    /*h6*/
+    --font-h6: var(--font-body);
+    --weight-h6: var(--weight-medium);
+    --text-h6: var(--text-base);
+    --leading-h6: var(--leading-normal);
+    --tracking-h6: var(--tracking-wide);
+    --transform-h6: uppercase;
+    --color-h6: var(--color-text);
+    --measure-h6: none;
+
+    /*p*/
+    --font-p: var(--font-body);
+    --weight-p: var(--weight-regular);
+    --text-p: var(--text-base);
+    --leading-p: var(--leading-relaxed);
+    --tracking-p: var(--tracking-normal);
+    --transform-p: none;
+    --color-p: var(--color-text);
+    --measure-p: var(--measure);
+
+    /*a*/
+    --font-a: inherit;
+    --weight-a: inherit;
+    --text-a: inherit;
+    --leading-a: inherit;
+    --tracking-a: inherit;
+    --transform-a: none;
+    --color-a: var(--color-focus);
+    --measure-a: none;
+
+    /*th*/
+    --font-th: var(--font-body);
+    --weight-th: var(--weight-semibold);
+    --text-th: var(--text-sm);
+    --leading-th: var(--leading-tight);
+    --tracking-th: var(--tracking-wider);
+    --transform-th: uppercase;
+    --color-th: var(--color-text);
+    --measure-th: none;
+
+    /*.subheading*/
+    --font-subheading: var(--font-display);
+    --weight-subheading: var(--weight-medium);
+    --text-subheading: var(--text-lg);
+    --leading-subheading: var(--leading-snug);
+    --tracking-subheading: var(--tracking-normal);
+    --transform-subheading: none;
+    --color-subheading: var(--color-text);
+    --measure-subheading: var(--measure-wide);
+
+    /*.badge*/
+    --font-badge: var(--font-body);
+    --weight-badge: var(--weight-medium);
+    --text-badge: var(--text-xs);
+    --leading-badge: var(--leading-tight);
+    --tracking-badge: var(--tracking-wide);
+    --transform-badge: none;
+    --color-badge: var(--color-text);
+    --measure-badge: none;
+
+    /*.eyebrow*/
+    --font-eyebrow: var(--font-body);
+    --weight-eyebrow: var(--weight-medium);
+    --text-eyebrow: var(--text-xs);
+    --leading-eyebrow: var(--leading-normal);
+    --tracking-eyebrow: var(--tracking-wider);
+    --transform-eyebrow: uppercase;
+    --color-eyebrow: var(--color-text);
+    --measure-eyebrow: none;
+
+    /*layout*/
+    --header-bg: var(--color-bg-header);
+    --header-padding-block: var(--space-5);
+
+    --section-padding-block: var(--space-8);
+    --section-max-width: var(--container-xl);
+
+    --container-max-width: var(--container-xl);
+    --container-gutter: var(--gutter);
+
+    /*components*/
+    --button-font: var(--font-body);
+    --button-weight: var(--weight-medium);
+    --button-text: var(--text-sm);
+    --button-leading: var(--leading-normal);
+    --button-tracking: var(--tracking-normal);
+    --button-transform: none;
+    --button-text-color: var(--color-bg);
+    --button-bg: var(--color-text);
+    --button-padding-y: var(--space-2);
+    --button-padding-x: var(--space-4);
+    --button-radius: var(--radius-sm, 0.375rem);
+}

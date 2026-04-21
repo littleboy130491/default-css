@@ -1,11 +1,24 @@
 :root {
     /*color*/
-     --color-bg-header: beige;
+    --color-bg: #ffffff;
+    --color-text: #0f0d0c;
+    --color-focus: #2563eb;
+    --color-bg-header: beige;
+
+    /*focus ring*/
+    --focus-ring-width: 2px;
+    --focus-ring-offset: 2px;
 
     /*typography*/
     --font-display: "Fraunces", serif;
     --font-body: "Inter", system-ui, sans-serif;
+    --font-sans: var(--font-body);
     --font-mono: "JetBrains Mono", monospace;
+
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
 
     --text-xs: 0.75rem;   /* 12 */
     --text-sm: 0.875rem;  /* 14 */
@@ -48,9 +61,16 @@
     --space-10: 8rem;     /* 128 */
     --space-11: 12rem;    /* 192 */
     --space-12: 16rem;    /* 256 */
-
-    /*width*/
-    --width-container: 1280px;
+ 
+    /* LAYOUT ------------------------------------------------- */
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1440px;
+    --container-max: 1600px;
+    --gutter:    var(--space-5);
+    --gutter-lg: var(--space-7);
 
     /* SHADOWS — restrained ----------------------- */
     --shadow-subtle: 0 1px 2px rgba(15, 13, 12, 0.04);

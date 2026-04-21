@@ -1,8 +1,9 @@
-@layer tokens, dev, base, typography, layout, project;
+@layer tokens, dev, base, typography, layout, settings, project;
 
 @import url("./tokens.css") layer(tokens);
 @import url("./dev.css") layer(dev);
 @import url("./base.css") layer(base);
 @import url("./typography.css") layer(typography);
 @import url("./layout.css") layer(layout);
+@import url("./settings.css") layer(settings);
 @import url("./project.css") layer(project);
