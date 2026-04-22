@@ -14,8 +14,8 @@
      --color-focus: #2563eb;
 
     /*typography*/
-    --font-display: "Fraunces", serif;
-    --font-body: "Inter", system-ui, sans-serif;
+    --font-display: "Playfair Display", serif;
+    --font-body: "Poppins", system-ui, sans-serif;
     --font-sans: var(--font-body);
     --font-mono: "JetBrains Mono", monospace; 
     

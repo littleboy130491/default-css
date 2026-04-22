@@ -1,0 +1,12 @@
+.card {
+
+}
+
+.hero {
+
+}
+.article-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-4);
+}
