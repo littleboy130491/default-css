@@ -194,9 +194,12 @@
     --bg-header: var(--color-bg);
     --padding-block-header: var(--space-5);
 
+    /*footer*/
+    --bg-footer: var(--color-bg);
+    --padding-block-footer: var(--space-5);
+
     /*section*/
-    --width-max-section: var(--container-xl);
-    --padding-block-section: var(--space-8);
+    --padding-block-section: var(--space-5);
 
     /*container*/
     --padding-block-container: var(--space-8);
@@ -212,7 +215,7 @@
 
     /*flow*/
     --flow-space-default: var(--space-5);
-    --flow-space-label-to-heading: var(--space-2);
+    --flow-space-label-to-heading: var(--space-4);
     --flow-space-heading-to-p: var(--space-3);
     --flow-space-p-to-action: var(--space-5);
     --flow-space-heading-to-action: var(--space-5);

@@ -1,6 +1,6 @@
 header {
-    background: var(--color-bg-header);
-    padding-block: var(--padding-block-header);
+  background: var(--color-bg-header);
+  padding-block: var(--padding-block-header);
 }
 
 footer {
@@ -10,6 +10,7 @@ footer {
 
 section, .section {
   width: var(--width-default);
+  padding-block: var(--padding-block-section);
 }
 
 .container {
@@ -103,4 +104,77 @@ section, .section {
 /* Grid: auto-fit with min-width */
 .grid--auto {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+/* Utility classes */
+.full-width {
+  max-width: 100%;
+}
+
+/* Text alignment */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Flexbox alignment - cross axis */
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+/* Flexbox alignment - main axis */
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+/* Margin auto for centering */
+.mx-auto {
+  margin-inline: auto;
+}
+
+.my-auto {
+  margin-block: auto;
+}
+
+.m-auto {
+  margin: auto;
 }
