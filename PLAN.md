@@ -12,3 +12,12 @@ user typically only need to change settings.css:
 then user might extend it for each elements or additional class, whether using tailwind or reguler css.
 
 project.css -> user should add more custom css here for project-specific classes, overrides, and extra components.
+
+naming convention for token and settings:
+- use utility-element format
+- canonical examples:
+  - color/background: bg-header, text-muted, border-subtle
+  - spacing/layout: padding-block-section, gap-card, width-container
+  - typography: font-heading, size-body, leading-reading
+  - border/radius/shadow: radius-card, border-input, shadow-modal
+  - component state/role: bg-button-primary, text-link-hover, border-card-active

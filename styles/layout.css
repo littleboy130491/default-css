@@ -1,16 +1,106 @@
 header {
     background: var(--color-bg-header);
-    padding-block: var(--space-header);
+    padding-block: var(--padding-block-header);
 }
 
-section,
-.section {
-  width: 100%;
+footer {
+  background: var(--bg-footer);
+  padding-block: var(--padding-block-footer);
 }
 
-/* Container purpose is to avoid full width*/
+section, .section {
+  width: var(--width-default);
+}
+
 .container {
-  /* width: min(var(--width-container), calc(100% - var(--space-container))); */
-  max-width: var(--width-container);
+  width: 100%;
+  max-width: var(--width-container-max);
+  padding-block: var(--padding-block-container);
+  padding-inline: var(--padding-inline-container);
   margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: var(--width-container-tablet);
+    padding-inline: var(--padding-inline-container-tablet);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: var(--width-container-mobile);
+    padding-inline: var(--padding-inline-container-mobile);
+  }
+}
+
+/* Flow: default spacing between direct siblings, usually used together with container class */
+.flow > * + * {
+  margin-block-start: var(--flow-space);
+}
+
+/* Flow: make plain links accept vertical margin spacing */
+.flow > a:not(.button) {
+  display: inline-block;
+}
+
+/* Flow: tighter spacing from eyebrow/subheading to heading */
+.flow > :is(.subheading, .eyebrow) + :is(h1, h2, h3, h4, h5, h6) {
+  margin-block-start: var(--flow-space-label-to-heading);
+}
+
+/* Flow: spacing from heading to paragraph */
+.flow > :is(h1, h2, h3, h4, h5, h6) + p {
+  margin-block-start: var(--flow-space-heading-to-p);
+}
+
+/* Flow: spacing from paragraph to link/button action */
+.flow > p + :is(a, .button, button) {
+  margin-block-start: var(--flow-space-p-to-action);
+}
+
+/* Flow: spacing from heading directly to link/button action */
+.flow > :is(h1, h2, h3, h4, h5, h6) + :is(a, .button, button) {
+  margin-block-start: var(--flow-space-heading-to-action);
+}
+
+/* Stack: vertical rhythm */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-stack);
+}
+
+/* Cluster: horizontal group that wraps */
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-cluster);
+  align-items: center;
+}
+
+/* Grid: simple grid layout */
+.grid {
+  display: grid;
+  gap: var(--gap-grid);
+}
+
+/* Grid: 2 columns */
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Grid: 3 columns */
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Grid: 4 columns */
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Grid: auto-fit with min-width */
+.grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
