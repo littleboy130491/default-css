@@ -184,14 +184,11 @@
     /*layout*/
     --width-default: 100%;
     --width-container-max: 1200px;
-    --padding-block-container: 0;
-    --padding-inline-container: 24px;
-
     --width-container-tablet: 720px;
-    --padding-inline-container-tablet: 16px;
-
-    --width-container-mobile: 100%;
-    --padding-inline-container-mobile: 12px;
+    --padding-block-container: var(--space-8);
+    --padding-inline-container: 24px;
+    --padding-inline-container-tablet: var(--space-4);
+    --padding-inline-container-mobile: var(--space-5);
 
     /*header*/
     --bg-header: var(--color-bg);
@@ -203,12 +200,6 @@
 
     /*section*/
     --padding-block-section: var(--space-8);
-
-    /*container*/
-    --padding-block-container: var(--space-8);
-    --padding-inline-container-tablet: var(--space-4);
-    --padding-inline-container-mobile: var(--space-5);
-    --padding-inline-container-desktop: var(--space-6);
 
     /*cluster*/
     --gap-cluster: var(--space-4);

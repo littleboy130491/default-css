@@ -9,12 +9,11 @@ footer {
 }
 
 section, .section {
-  width: var(--width-default);
   padding-block: var(--padding-block-section);
 }
 
 .container {
-  width: 100%;
+  width: var(--width-default);
   max-width: var(--width-container-max);
   padding-block: var(--padding-block-container);
   padding-inline: var(--padding-inline-container);
@@ -30,7 +29,6 @@ section, .section {
 
 @media (max-width: 640px) {
   .container {
-    max-width: var(--width-container-mobile);
     padding-inline: var(--padding-inline-container-mobile);
   }
 }
@@ -128,7 +126,7 @@ section, .section {
 
 /* Utility classes */
 .full-width {
-  max-width: 100%;
+  max-width: var(--width-default);
 }
 
 /* Text alignment */
