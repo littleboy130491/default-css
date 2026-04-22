@@ -65,6 +65,26 @@ section, .section {
   margin-block-start: var(--flow-space-heading-to-action);
 }
 
+/* Flow: spacing from image to paragraph */
+.flow > img + p {
+  margin-block-start: var(--flow-space-img-to-p);
+}
+
+/* Flow: spacing from paragraph to image */
+.flow > p + img {
+  margin-block-start: var(--flow-space-p-to-img);
+}
+
+/* Flow: spacing from icon to paragraph */
+.flow > .icon + p {
+  margin-block-start: var(--flow-space-icon-to-p);
+}
+
+/* Flow: spacing from paragraph to icon */
+.flow > p + .icon {
+  margin-block-start: var(--flow-space-p-to-icon);
+}
+
 /* Stack: vertical rhythm */
 .stack {
   display: flex;
@@ -177,4 +197,59 @@ section, .section {
 
 .m-auto {
   margin: auto;
+}
+
+/*
+  Prose: long-form article layout — measure, rhythm, and overflow only
+  Wrap article content in <article class="prose"> or <div class="prose">
+*/
+.prose {
+  max-width: var(--measure-prose);
+  margin-inline: auto;
+}
+
+.prose > * + * {
+  margin-block-start: var(--flow-space-prose);
+}
+
+.prose > :is(h1, h2, h3, h4, h5, h6) {
+  margin-block-start: var(--flow-space-prose-before-heading);
+}
+
+.prose > :is(h1, h2, h3, h4, h5, h6):first-child {
+  margin-block-start: 0;
+}
+
+.prose > :is(h1, h2, h3, h4, h5, h6) + * {
+  margin-block-start: var(--flow-space-prose-after-heading);
+}
+
+.prose :is(ul, ol) {
+  padding-inline-start: var(--padding-inline-prose-list);
+}
+
+.prose :is(ul, ol) li + li {
+  margin-block-start: var(--flow-space-prose-list-item);
+}
+
+.prose blockquote {
+  padding-inline-start: var(--padding-inline-prose-blockquote);
+}
+
+.prose pre {
+  padding: var(--padding-prose-pre);
+  overflow-x: auto;
+}
+
+.prose :is(img, video) {
+  max-width: 100%;
+  height: auto;
+}
+
+.prose figure figcaption {
+  margin-block-start: var(--flow-space-prose-figcaption);
+}
+
+.prose hr {
+  margin-block: var(--margin-block-prose-hr);
 }

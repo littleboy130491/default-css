@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prose — Default CSS</title>
+  <link rel="stylesheet" href="styles/system.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=JetBrains+Mono:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="eyebrow">Essay · Issue 04</p>
+      <h1>On the Quiet Craft of Good Defaults</h1>
+      <p class="subheading">An argument for spending an afternoon on the settings file before writing a single component.</p>
+      <nav class="cluster" style="margin-block-start: var(--space-4);">
+        <a href="design-system.html">Design System</a>
+        <a href="prose.html">Prose</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <article class="prose">
+
+          <p class="lede">
+            Most design systems fail not at the edges but at the origin — in the handful of values that get quietly inherited by everything else. The work of choosing those values well is rarely visible, and that is precisely why it pays off.
+          </p>
+
+          <p>
+            There is a particular kind of website that feels considered the instant it loads. The line-height is correct. The headings sit at a measured width. The accent color is not blue. Nothing shouts. You scroll, and the page rewards the scroll. You do not need to be a designer to feel it, and you do not need to be a designer to build it — you only need to take the defaults seriously.
+          </p>
+
+          <h2>The settings file is the product</h2>
+
+          <p>
+            A stylesheet is a kind of argument. Every variable is a sentence about what the project thinks matters. When the default <code>--color-bg</code> is <code>#ffffff</code>, the project is saying something (probably by accident) about clinical neutrality. When it is <code>#faf8f4</code>, it is saying something else — warmth, paper, a little restraint.
+          </p>
+
+          <p>
+            Good tokens do three things at once: they carry a <em>decision</em>, they carry a <em>reason</em>, and they carry an <em>invitation</em> to override. The best settings files read less like configuration and more like the first chapter of a style guide that happens to compile.
+          </p>
+
+          <blockquote>
+            Designers love to say that constraint breeds creativity. They are less eager to admit that most constraint is set by whoever named the first variable.
+          </blockquote>
+
+          <h3>A working checklist</h3>
+
+          <p>
+            Before writing a single component, it is worth spending an hour on the following — in this order, because each depends on the one before it:
+          </p>
+
+          <ol>
+            <li>Pick a background that is not pure white. The rest of the palette will thank you.</li>
+            <li>Pick an accent that is not the default framework blue.</li>
+            <li>Set a measure. Sixty-five characters is a good measure. Forty-eight is a better measure for essays.</li>
+            <li>Decide how much air goes between a heading and the paragraph that follows it. Then halve it.</li>
+            <li>Give your buttons a weight heavier than you think they need.</li>
+          </ol>
+
+          <p>
+            None of these are opinions about <em>your</em> project. They are opinions about the kind of project that looks good before anyone touches it.
+          </p>
+
+          <h3>On restraint</h3>
+
+          <p>
+            A list of things the default stylesheet should <strong>not</strong> include:
+          </p>
+
+          <ul>
+            <li>A gradient.</li>
+            <li>A drop shadow larger than <code>0 8px 24px</code>.</li>
+            <li>More than one accent color.</li>
+            <li>A border radius above <code>0.5rem</code>, except on pills.</li>
+            <li>Any font loaded only because it was trending this quarter.</li>
+          </ul>
+
+          <p>
+            Add these when the design calls for them. Not before.
+          </p>
+
+          <h2>Typography is a system, not a choice</h2>
+
+          <p>
+            Choosing a typeface is the easy part. The hard part is deciding what that typeface <em>means</em> at every size. A display serif at 88px is an entirely different object than the same serif at 22px — the optical size axis exists because the designers of the font already knew this. Most projects do not.
+          </p>
+
+          <p>
+            A simple heuristic: if your <code>h1</code> and your <code>h3</code> use the same tracking value, one of them is wrong. Tighter as you go larger; looser as you go smaller. It is not a rule so much as a ramp.
+          </p>
+
+          <pre><code>/* A tracking ramp, roughly */
+--tracking-h1: -0.04em;
+--tracking-h2: -0.02em;
+--tracking-h3: -0.01em;
+--tracking-p:   0;
+--tracking-eyebrow: 0.08em;</code></pre>
+
+          <p>
+            The values are less important than the direction. The ramp is the idea.
+          </p>
+
+          <figure>
+            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=1200&q=80" alt="Stacks of printed editorial magazines on a wooden table.">
+            <figcaption>Print has been working this out for a century. It is worth borrowing from.</figcaption>
+          </figure>
+
+          <h2>On finishing</h2>
+
+          <p>
+            A design system is never done, but a settings file can be. There is a version of it where every value is defensible, every token is used, and the next person to open the project can ship a page without asking a single question. That version is worth reaching.
+          </p>
+
+          <hr>
+
+          <p>
+            Further reading: the <a href="design-system.html">design system overview</a>, and the <a href="index.html">home page</a> that uses the same tokens as this essay.
+          </p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Default CSS. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

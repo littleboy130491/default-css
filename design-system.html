@@ -50,14 +50,10 @@
       border-radius: 0.25rem;
     }
     .demo-box {
-      /* padding: var(--space-4); */
       border: 2px dashed var(--color-muted);
-      border-radius: var(--radius-button);
     }
     .demo-item {
-      /* padding: var(--space-2); */
       border: 1px solid var(--color-muted);
-      border-radius: var(--radius-button);
     }
     .scroll-to-top {
       position: fixed;
@@ -100,6 +96,7 @@
         <a href="#layout">Layout</a>
         <a href="#tables">Tables</a>
         <a href="#how-to-use">How to Use</a>
+        <a href="prose.html">Prose</a>
       </nav>
     </div>
   </header>
@@ -145,8 +142,16 @@
             <p class="eyebrow">--color-bg</p>
           </div>
           <div style="text-align: center;">
+            <div class="token-swatch" style="background: var(--color-surface); border: 1px solid var(--color-border);"></div>
+            <p class="eyebrow">--color-surface</p>
+          </div>
+          <div style="text-align: center;">
             <div class="token-swatch token-swatch--primary"></div>
             <p class="eyebrow">--color-primary</p>
+          </div>
+          <div style="text-align: center;">
+            <div class="token-swatch" style="background: var(--color-accent); color: var(--color-bg);"></div>
+            <p class="eyebrow">--color-accent</p>
           </div>
           <div style="text-align: center;">
             <div class="token-swatch token-swatch--secondary"></div>
@@ -154,22 +159,26 @@
           </div>
           <div style="text-align: center;">
             <div class="token-swatch token-swatch--text"></div>
-            <p class="eyebrow">--color-text</p>
+            <p class="eyebrow">--color-heading</p>
           </div>
           <div style="text-align: center;">
             <div class="token-swatch token-swatch--text"></div>
-            <p class="eyebrow">--color-heading</p>
+            <p class="eyebrow">--color-text</p>
           </div>
           <div style="text-align: center;">
             <div class="token-swatch token-swatch--muted"></div>
             <p class="eyebrow">--color-muted</p>
           </div>
           <div style="text-align: center;">
-            <div class="token-swatch token-swatch--primary"></div>
+            <div class="token-swatch" style="background: var(--color-border);"></div>
+            <p class="eyebrow">--color-border</p>
+          </div>
+          <div style="text-align: center;">
+            <div class="token-swatch" style="background: var(--color-link); color: var(--color-bg);"></div>
             <p class="eyebrow">--color-link</p>
           </div>
           <div style="text-align: center;">
-            <div class="token-swatch token-swatch--primary"></div>
+            <div class="token-swatch" style="background: var(--color-focus); color: var(--color-bg);"></div>
             <p class="eyebrow">--color-focus</p>
           </div>
         </div>
@@ -180,26 +189,8 @@
         </div>
 
         <div class="cluster" style="margin-block-start: var(--space-6);">
-          <div style="text-align: center;">
-            <div class="token-swatch token-swatch--primary"></div>
-            <p class="eyebrow">--color-bg-button-primary</p>
-            <p>#2563eb</p>
-          </div>
-          <div style="text-align: center;">
-            <div class="token-swatch token-swatch--bg"></div>
-            <p class="eyebrow">--color-text-button-primary</p>
-            <p>#ffffff</p>
-          </div>
-          <div style="text-align: center;">
-            <div class="token-swatch" style="background: var(--color-bg-button-secondary); border: 1px solid var(--color-muted);"></div>
-            <p class="eyebrow">--color-bg-button-secondary</p>
-            <p>#e5e7eb</p>
-          </div>
-          <div style="text-align: center;">
-            <div class="token-swatch token-swatch--text"></div>
-            <p class="eyebrow">--color-text-button-secondary</p>
-            <p>#0f0d0c</p>
-          </div>
+          <a href="#" class="button button--primary">Primary Button</a>
+          <a href="#" class="button button--secondary">Secondary Button</a>
         </div>
       </div>
     </section>
@@ -229,6 +220,22 @@
             <h3>Heading</h3>
             <p>Paragraph with automatic spacing.</p>
             <button class="button">Button</button>
+          </div>
+        </div>
+
+        <div class="flow" style="margin-block-start: var(--space-8);">
+          <p class="eyebrow">Flow - Image & Icon</p>
+          <p class="subheading">Automatic spacing between images/icons and paragraphs.</p>
+          <div class="flow demo-box">
+            <div style="width: 100%; max-width: 400px; height: 200px; background: var(--color-primary); display: flex; align-items: center; justify-content: center; color: var(--color-text-button-primary);">
+              <span>Image placeholder</span>
+            </div>
+            <p>Paragraph after image with automatic spacing.</p>
+            <div class="icon" style="display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-2); background: var(--color-muted); color: var(--color-bg-button-primary);">
+              <span style="font-size: 1.5rem;">★</span>
+              <span>Icon element</span>
+            </div>
+            <p>Paragraph after icon with automatic spacing.</p>
           </div>
         </div>
 

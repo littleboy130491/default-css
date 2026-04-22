@@ -1,20 +1,23 @@
 :root {
      /*color*/
-     --color-bg: #ffffff;
-     --color-primary: #2563eb;
-     --color-secondary: #0f0d0c;
-     --color-heading: #0f0d0c;
-     --color-text: #0f0d0c;
-     --color-muted: #6b7280;
-     --color-link: #2563eb;
-     --color-bg-button-primary: #2563eb;
-     --color-text-button-primary: #ffffff;
-     --color-bg-button-secondary: #e5e7eb;
-     --color-text-button-secondary: #0f0d0c;
-     --color-focus: #2563eb;
+     --color-bg: #faf8f4;                         /* warm off-white */
+     --color-surface: #ffffff;
+     --color-primary: #111111;                    /* near-black, editorial */
+     --color-accent: #b4431c;                     /* warm terracotta */
+     --color-secondary: #2a2724;
+     --color-heading: #0a0908;
+     --color-text: #1c1a17;                       /* warm ink */
+     --color-muted: #8a847c;                      /* warm muted */
+     --color-border: #e6e1d8;
+     --color-link: #b4431c;
+     --color-bg-button-primary: #0a0908;
+     --color-text-button-primary: #faf8f4;
+     --color-bg-button-secondary: #e6e1d8;
+     --color-text-button-secondary: #0a0908;
+     --color-focus: #b4431c;
 
     /*typography*/
-    --font-display: "Playfair Display", serif;
+    --font-display: "Fraunces", Georgia, serif;
     --font-body: "Poppins", system-ui, sans-serif;
     --font-sans: var(--font-body);
     --font-mono: "JetBrains Mono", monospace; 
@@ -22,26 +25,26 @@
     /*h1*/
     --font-h1: var(--font-display);
     --weight-h1: var(--weight-bold);
-    --text-h1: var(--text-3xl);
-    --text-h1-tablet: var(--text-2xl);
-    --text-h1-mobile: var(--text-xl);
+    --text-h1: var(--text-4xl);
+    --text-h1-tablet: var(--text-3xl);
+    --text-h1-mobile: var(--text-2xl);
     --leading-h1: var(--leading-tight);
-    --tracking-h1: var(--tracking-tight);
+    --tracking-h1: var(--tracking-tightest);
     --transform-h1: none;
-    --color-h1: var(--color-text);
-    --measure-h1: none;
+    --color-h1: var(--color-heading);
+    --measure-h1: 18ch;
 
     /*h2*/
     --font-h2: var(--font-display);
-    --weight-h2: var(--weight-semibold);
+    --weight-h2: var(--weight-bold);
     --text-h2: var(--text-2xl);
     --text-h2-tablet: var(--text-xl);
     --text-h2-mobile: var(--text-lg);
     --leading-h2: var(--leading-tight);
     --tracking-h2: var(--tracking-tight);
     --transform-h2: none;
-    --color-h2: var(--color-text);
-    --measure-h2: none;
+    --color-h2: var(--color-heading);
+    --measure-h2: 22ch;
 
     /*h3*/
     --font-h3: var(--font-display);
@@ -50,10 +53,10 @@
     --text-h3-tablet: var(--text-lg);
     --text-h3-mobile: var(--text-md);
     --leading-h3: var(--leading-snug);
-    --tracking-h3: var(--tracking-normal);
+    --tracking-h3: var(--tracking-tight);
     --transform-h3: none;
-    --color-h3: var(--color-text);
-    --measure-h3: none;
+    --color-h3: var(--color-heading);
+    --measure-h3: 28ch;
 
     /*h4*/
     --font-h4: var(--font-body);
@@ -94,9 +97,9 @@
     /*p*/
     --font-p: var(--font-body);
     --weight-p: var(--weight-regular);
-    --text-p: var(--text-base);
-    --text-p-tablet: var(--text-sm);
-    --text-p-mobile: var(--text-sm);
+    --text-p: var(--text-md);
+    --text-p-tablet: var(--text-base);
+    --text-p-mobile: var(--text-base);
     --leading-p: var(--leading-relaxed);
     --tracking-p: var(--tracking-normal);
     --transform-p: none;
@@ -105,27 +108,27 @@
 
     /*a*/
     --font-a: inherit;
-    --weight-a: inherit;
+    --weight-a: var(--weight-medium);
     --text-a: inherit;
     --text-a-tablet: inherit;
     --text-a-mobile: inherit;
     --leading-a: inherit;
     --tracking-a: inherit;
     --transform-a: none;
-    --color-a: var(--color-focus);
+    --color-a: var(--color-link);
     --measure-a: none;
 
      /*.subheading*/
-    --font-subheading: var(--font-display);
-    --weight-subheading: var(--weight-medium);
+    --font-subheading: var(--font-body);
+    --weight-subheading: var(--weight-regular);
     --text-subheading: var(--text-lg);
     --text-subheading-tablet: var(--text-md);
     --text-subheading-mobile: var(--text-base);
     --leading-subheading: var(--leading-snug);
     --tracking-subheading: var(--tracking-normal);
     --transform-subheading: none;
-    --color-subheading: var(--color-text);
-    --measure-subheading: var(--measure-wide);
+    --color-subheading: var(--color-muted);
+    --measure-subheading: 52ch;
 
     /*.badge*/
     --font-badge: var(--font-body);
@@ -149,34 +152,34 @@
 
     /*.eyebrow*/
     --font-eyebrow: var(--font-body);
-    --weight-eyebrow: var(--weight-medium);
+    --weight-eyebrow: var(--weight-semibold);
     --text-eyebrow: var(--text-xs);
     --text-eyebrow-tablet: var(--text-xs);
     --text-eyebrow-mobile: 0.6875rem;
     --leading-eyebrow: var(--leading-normal);
     --tracking-eyebrow: var(--tracking-wider);
     --transform-eyebrow: uppercase;
-    --color-eyebrow: var(--color-text);
+    --color-eyebrow: var(--color-accent);
     --measure-eyebrow: none;
 
      /*button*/
     --font-button: var(--font-body);
-    --weight-button: var(--weight-medium);
+    --weight-button: var(--weight-semibold);
     --text-button: var(--text-sm);
     --text-button-tablet: var(--text-sm);
-    --text-button-mobile: var(--text-xs);
+    --text-button-mobile: var(--text-sm);
     --leading-button: var(--leading-normal);
-    --tracking-button: var(--tracking-normal);
+    --tracking-button: var(--tracking-wide);
     --transform-button: none;
-    --color-text-button: var(--color-bg);
-    --bg-button: var(--color-text);
-    --padding-block-button: var(--space-2);
-    --padding-block-button-tablet: var(--space-2);
-    --padding-block-button-mobile: var(--space-1-5);
-    --padding-inline-button: var(--space-4);
-    --padding-inline-button-tablet: var(--space-3);
-    --padding-inline-button-mobile: var(--space-3);
-    --radius-button: var(--radius-sm, 0.375rem);
+    --color-text-button: var(--color-text-button-primary);
+    --bg-button: var(--color-bg-button-primary);
+    --padding-block-button: var(--space-3);
+    --padding-block-button-tablet: var(--space-3);
+    --padding-block-button-mobile: var(--space-2);
+    --padding-inline-button: var(--space-6);
+    --padding-inline-button-tablet: var(--space-5);
+    --padding-inline-button-mobile: var(--space-4);
+    --radius-button: 9999px;
 
     /*layout*/
     --width-default: 100%;
@@ -192,14 +195,14 @@
 
     /*header*/
     --bg-header: var(--color-bg);
-    --padding-block-header: var(--space-5);
+    --padding-block-header: var(--space-7);
 
     /*footer*/
     --bg-footer: var(--color-bg);
-    --padding-block-footer: var(--space-5);
+    --padding-block-footer: var(--space-7);
 
     /*section*/
-    --padding-block-section: var(--space-5);
+    --padding-block-section: var(--space-8);
 
     /*container*/
     --padding-block-container: var(--space-8);
@@ -219,20 +222,36 @@
     --flow-space-heading-to-p: var(--space-3);
     --flow-space-p-to-action: var(--space-5);
     --flow-space-heading-to-action: var(--space-5);
+    --flow-space-img-to-p: var(--space-4);
+    --flow-space-p-to-img: var(--space-4);
+    --flow-space-icon-to-p: var(--space-3);
+    --flow-space-p-to-icon: var(--space-3);
 
     /*grid*/
     --gap-grid: var(--space-2);
 
+    /*prose*/
+    --measure-prose: var(--measure);
+    --flow-space-prose: var(--space-5);
+    --flow-space-prose-before-heading: var(--space-7);
+    --flow-space-prose-after-heading: var(--space-3);
+    --padding-inline-prose-list: var(--space-5);
+    --flow-space-prose-list-item: var(--space-2);
+    --padding-inline-prose-blockquote: var(--space-5);
+    --padding-prose-pre: var(--space-4);
+    --flow-space-prose-figcaption: var(--space-2);
+    --margin-block-prose-hr: var(--space-7);
+
     /*th*/
     --font-th: var(--font-body);
     --weight-th: var(--weight-semibold);
-    --text-th: var(--text-sm);
+    --text-th: var(--text-xs);
     --text-th-tablet: var(--text-xs);
     --text-th-mobile: var(--text-xs);
     --leading-th: var(--leading-tight);
     --tracking-th: var(--tracking-wider);
     --transform-th: uppercase;
-    --color-th: var(--color-text);
+    --color-th: var(--color-muted);
     --measure-th: none;
     --align-th: left;
     --padding-block-th: var(--space-3);
@@ -241,7 +260,7 @@
     --padding-inline-th: var(--space-4);
     --padding-inline-th-tablet: var(--space-3);
     --padding-inline-th-mobile: var(--space-2);
-    --border-bottom-th: 1px solid var(--color-muted);
+    --border-bottom-th: 1px solid var(--color-border);
     --bg-th: transparent;
 
     /*table*/
@@ -276,14 +295,14 @@
     --padding-inline-td: var(--space-4);
     --padding-inline-td-tablet: var(--space-3);
     --padding-inline-td-mobile: var(--space-2);
-    --border-bottom-td: 1px solid var(--color-muted);
+    --border-bottom-td: 1px solid var(--color-border);
 
     /*thead*/
     --bg-thead: transparent;
 
     /*tbody*/
     --bg-tbody: transparent;
-    --bg-table-row-hover: var(--color-bg-button-secondary);
+    --bg-table-row-hover: var(--color-surface);
 
     /*tfoot*/
     --bg-tfoot: transparent;
