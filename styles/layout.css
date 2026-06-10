@@ -1,11 +1,17 @@
 header {
   background: var(--color-bg-header);
-  padding-block: var(--padding-block-header);
+}
+
+.header-fixed {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  width: 100%;
+  z-index: 40;
 }
 
 footer {
-  background: var(--bg-footer);
-  padding-block: var(--padding-block-footer);
+  background: none;
 }
 
 section, .section {
@@ -13,23 +19,20 @@ section, .section {
 }
 
 .container {
-  width: var(--width-default);
   max-width: var(--width-container-max);
-  padding-block: var(--padding-block-container);
-  padding-inline: var(--padding-inline-container);
   margin-inline: auto;
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: var(--width-container-tablet);
-    padding-inline: var(--padding-inline-container-tablet);
+    padding-inline: 24px;
   }
 }
 
 @media (max-width: 640px) {
   .container {
-    padding-inline: var(--padding-inline-container-mobile);
+    padding-inline: 16px;
   }
 }
 
@@ -127,23 +130,6 @@ section, .section {
 /* Utility classes */
 .full-width {
   max-width: var(--width-default);
-}
-
-/* Text alignment */
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-justify {
-  text-align: justify;
 }
 
 /* Flexbox alignment - cross axis */
@@ -250,4 +236,65 @@ section, .section {
 
 .prose hr {
   margin-block: var(--margin-block-prose-hr);
+}
+
+
+
+/* Layout Paragraf */
+.richtext > * + * {
+  margin-block-start: var(--flow-space);
+}
+
+.richtext :is(ul, ol) {
+  padding-inline-start: var(--padding-inline-prose-list);
+}
+
+.richtext ul {
+  list-style: disc;
+}
+
+.richtext ol {
+  list-style: decimal;
+}
+
+.richtext :is(ul, ol) li + li {
+  margin-block-start: var(--flow-space-prose-list-item);
+}
+
+.richtext :is(ul, ol) li > p {
+  margin-block: 0;
+}
+
+.richtext > :is(h1, h2, h3, h4, h5, h6) {
+  margin-block-start: var(--flow-space-prose-before-heading);
+}
+
+.richtext > :is(h1, h2, h3, h4, h5, h6):first-child {
+  margin-block-start: 0;
+}
+
+.richtext > :is(h1, h2, h3, h4, h5, h6) + * {
+  margin-block-start: var(--flow-space-prose-after-heading);
+}
+
+.richtext blockquote {
+  padding-inline-start: var(--padding-inline-prose-blockquote);
+}
+
+.richtext a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.richtext :is(img, video) {
+  max-width: 100%;
+  height: auto;
+}
+
+.richtext p + p {
+  margin-block-start: 0.75rem;
+}
+
+.richtext p:empty {
+  min-height: 1em;
 }
